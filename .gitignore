@@ -1,0 +1,13 @@
+app/*
+apidoc_out/*
+node_modules/*
+*/node_modules/*
+server-config-secret.js
+server/server-config-secret.js
+*.suo
+*.sln
+*.njsproj
+.DS_Store
+npm-debug.log
+.settings/*
+.vscode

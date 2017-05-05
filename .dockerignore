@@ -1,0 +1,9 @@
+**/.DS_Store
+.awsbox.json
+.git
+.gitattributes
+.gitignore
+.settings
+apidoc_out
+deploy.sh
+node_modules
