@@ -78,7 +78,7 @@ function* createService (container) {
 
         winston.info('Service %s: adding upstream %s:%s (cid=%s)', backend, host, port.PublicPort, container.Id.substring(0,12));
 
-        let key = 'traefik/backends/'+backend+'/servers/'+container.Id.substring(0,12)+'/url';
+        let key = 'traefik/backends/'+backend+'/servers/beta-'+container.Id.substring(0,12)+'/url';
 
         yield consul.kv.del({ key: key });
         yield consul.kv.set({ key: key, value: 'http://'+host+':'+port.PublicPort, acquire: session });
